@@ -2063,3 +2063,445 @@ footer {
         transform: translateY(-5px);
     }
 }
+
+/* =====================================================
+   🔥 PREMIUM ABOUT SECTION
+   ===================================================== */
+
+#about {
+    padding: 90px 8% !important;
+    background: transparent !important;
+    color: white !important;
+}
+
+/* About heading */
+#about h2 {
+    color: white !important;
+    font-size: 38px;
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+/* About content box */
+#about .about-box {
+    max-width: 900px;
+    margin: auto;
+    padding: 40px;
+
+    background: linear-gradient(
+        145deg,
+        rgba(15, 23, 42, 0.90),
+        rgba(8, 15, 40, 0.82)
+    ) !important;
+
+    border: 1px solid rgba(56, 189, 248, 0.35) !important;
+
+    border-radius: 22px;
+
+    box-shadow:
+        0 10px 35px rgba(0, 0, 0, 0.40),
+        0 0 25px rgba(59, 130, 246, 0.10);
+
+    backdrop-filter: blur(14px);
+
+    transition: 0.35s ease;
+}
+
+/* About box hover */
+#about .about-box:hover {
+    transform: translateY(-6px);
+
+    border-color: rgba(168, 85, 247, 0.7) !important;
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.50),
+        0 0 30px rgba(59, 130, 246, 0.20),
+        0 0 35px rgba(168, 85, 247, 0.15);
+}
+
+/* About paragraph */
+#about .about-box p {
+    color: #cbd5e1 !important;
+    font-size: 18px;
+    line-height: 1.9;
+    text-align: center;
+}
+
+/* Highlight important words */
+#about .about-box strong {
+    color: #38bdf8;
+}
+
+/* ===== MOBILE ABOUT ===== */
+
+@media (max-width: 768px) {
+
+    #about {
+        padding: 65px 15px !important;
+    }
+
+    #about h2 {
+        font-size: 32px;
+        margin-bottom: 30px;
+    }
+
+    #about .about-box {
+        width: 95%;
+        padding: 28px 22px;
+        border-radius: 18px;
+    }
+
+    #about .about-box p {
+        font-size: 16px;
+        line-height: 1.8;
+    }
+
+    #about .about-box:hover {
+        transform: none;
+    }
+}
+
+/* =====================================================
+   🔥 PREMIUM SKILLS SECTION
+   ===================================================== */
+
+#skills {
+    padding: 90px 8% !important;
+    text-align: center;
+    background: transparent !important;
+}
+
+#skills h2 {
+    color: white !important;
+    font-size: 38px;
+    margin-bottom: 50px;
+}
+
+/* Skills cards container */
+#skills .skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+/* Premium skill card */
+#skills .skill-card {
+    width: 260px;
+    padding: 30px 25px;
+
+    background: linear-gradient(
+        145deg,
+        rgba(15, 23, 42, 0.92),
+        rgba(8, 15, 40, 0.82)
+    ) !important;
+
+    border: 1px solid rgba(56, 189, 248, 0.35) !important;
+    border-radius: 20px;
+
+    box-shadow:
+        0 10px 35px rgba(0, 0, 0, 0.35),
+        0 0 20px rgba(59, 130, 246, 0.08);
+
+    backdrop-filter: blur(12px);
+
+    transition: 0.35s ease;
+}
+
+/* Hover effect */
+#skills .skill-card:hover {
+    transform: translateY(-10px);
+
+    border-color: rgba(56, 189, 248, 0.8) !important;
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.5),
+        0 0 30px rgba(59, 130, 246, 0.25);
+}
+
+/* Skill icon */
+#skills .skill-icon {
+    font-size: 42px;
+    margin-bottom: 15px;
+
+    filter: drop-shadow(0 0 10px rgba(56, 189, 248, 0.6));
+}
+
+/* Skill heading */
+#skills .skill-card h3 {
+    color: white !important;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Description */
+#skills .skill-card p {
+    color: #cbd5e1 !important;
+    font-size: 15px;
+    margin-bottom: 22px;
+}
+
+/* Progress bar background */
+#skills .progress-bar {
+    width: 100%;
+    height: 10px;
+
+    background: rgba(255, 255, 255, 0.10);
+
+    border-radius: 20px;
+    overflow: hidden;
+
+    box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.4);
+}
+
+/* Glowing progress */
+#skills .progress {
+    height: 100%;
+
+    border-radius: 20px;
+
+    background: linear-gradient(
+        90deg,
+        #06b6d4,
+        #3b82f6,
+        #8b5cf6
+    );
+
+    box-shadow:
+        0 0 10px rgba(56, 189, 248, 0.8),
+        0 0 20px rgba(59, 130, 246, 0.5);
+
+    animation: skillLoad 1.5s ease-out;
+}
+
+/* Different skill percentages */
+#skills .html-progress {
+    width: 90%;
+}
+
+#skills .css-progress {
+    width: 85%;
+}
+
+#skills .js-progress {
+    width: 75%;
+}
+
+#skills .responsive-progress {
+    width: 85%;
+}
+
+/* Percentage */
+#skills .skill-card span {
+    display: block;
+    margin-top: 12px;
+
+    color: #38bdf8 !important;
+
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* Progress animation */
+@keyframes skillLoad {
+    from {
+        width: 0;
+    }
+}
+
+/* ===== MOBILE ===== */
+
+@media (max-width: 768px) {
+
+    #skills {
+        padding: 65px 15px !important;
+    }
+
+    #skills h2 {
+        font-size: 32px;
+        margin-bottom: 35px;
+    }
+
+    #skills .skills-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    #skills .skill-card {
+        width: 92%;
+        max-width: 360px;
+    }
+
+    #skills .skill-card:hover {
+        transform: none;
+    }
+}
+/* ===== PREMIUM CONTACT SECTION ===== */
+
+#contact {
+    padding: 80px 8%;
+    text-align: center;
+    background: transparent;
+}
+
+#contact h2 {
+    color: #ffffff;
+    font-size: 42px;
+    margin-bottom: 40px;
+    text-shadow: 0 0 15px rgba(0, 200, 255, 0.5);
+}
+
+/* Contact form */
+#contactForm {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 25px;
+
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(80, 180, 255, 0.35);
+
+    box-shadow:
+        0 0 25px rgba(0, 120, 255, 0.15),
+        inset 0 0 20px rgba(255, 255, 255, 0.03);
+
+    backdrop-filter: blur(12px);
+}
+
+/* Input boxes */
+#contactForm input,
+#contactForm textarea {
+    width: 100%;
+    padding: 16px 18px;
+    margin-bottom: 18px;
+
+    border: 1px solid rgba(80, 180, 255, 0.3);
+    border-radius: 12px;
+
+    background: rgba(0, 0, 0, 0.25);
+    color: #ffffff;
+
+    font-size: 16px;
+    outline: none;
+
+    transition: 0.3s ease;
+}
+
+/* Placeholder */
+#contactForm input::placeholder,
+#contactForm textarea::placeholder {
+    color: #b8c7df;
+}
+
+/* Input glow when clicked */
+#contactForm input:focus,
+#contactForm textarea:focus {
+    border-color: #38bdf8;
+
+    box-shadow:
+        0 0 12px rgba(56, 189, 248, 0.5);
+
+    background: rgba(0, 0, 0, 0.35);
+}
+
+/* Message box */
+#contactForm textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+/* Send button */
+#contactForm button {
+    width: 100%;
+    padding: 16px;
+
+    border: none;
+    border-radius: 12px;
+
+    background: linear-gradient(
+        90deg,
+        #22d3ee,
+        #6366f1
+    );
+
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 0 20px rgba(56, 189, 248, 0.4);
+
+    transition: 0.3s ease;
+}
+
+/* Button hover */
+#contactForm button:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 0 30px rgba(56, 189, 248, 0.7);
+}
+
+/* ===== PREMIUM FOOTER ===== */
+
+footer {
+    margin-top: 60px;
+    padding: 50px 20px 30px;
+    text-align: center;
+
+    background: rgba(5, 10, 30, 0.85);
+    border-top: 1px solid rgba(80, 150, 255, 0.35);
+
+    box-shadow:
+        0 -10px 40px rgba(0, 80, 255, 0.15),
+        inset 0 1px 0 rgba(255, 255, 255, 0.05);
+
+    backdrop-filter: blur(12px);
+}
+
+footer h3 {
+    font-size: 26px;
+    margin-bottom: 15px;
+    color: #ffffff;
+    text-shadow: 0 0 15px rgba(0, 200, 255, 0.7);
+}
+
+footer p {
+    color: #b8c7e6;
+    margin: 12px 0;
+    font-size: 15px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin: 25px 0;
+}
+
+.social-links a {
+    color: #8fdcff;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 600;
+
+    transition: 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #ffffff;
+    text-shadow:
+        0 0 8px #00d9ff,
+        0 0 20px #008cff;
+
+    transform: translateY(-3px);
+}
+
+footer p:last-child {
+    margin-top: 25px;
+    color: #8fa8d0;
+}

@@ -2754,3 +2754,85 @@ button:hover,
         0 0 20px rgba(56, 189, 248, 0.7),
         0 0 35px rgba(139, 92, 246, 0.45);
 }
+
+.project-card h3 {
+    width: 100%;
+    text-align: center;
+    white-space: normal;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    box-sizing: border-box;
+}
+
+.project-card {
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+
+    .project-container {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        padding: 15px;
+    }
+
+    .project-card {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+
+    .project-card img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        padding: 0;
+        margin-top: 15px;
+    }
+
+    .navbar a {
+        font-size: 16px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .hero {
+        padding: 60px 20px;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+        line-height: 1.2;
+    }
+
+    .hero p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .hero img {
+        max-width: 85%;
+        height: auto;
+    }
+
+}

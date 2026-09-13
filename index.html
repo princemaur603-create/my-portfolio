@@ -11,17 +11,22 @@
 <body>
 
      <!-- Navigation -->
-     <nav>
-        <h2>My Website</h2>
+       
+     <nav class="navbar">
+    <h2>My Website</h2>
 
-        <div class="menu">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </div>
-     </nav>
+    <button class="menu-btn" onclick="document.querySelector('.nav-links').classList.toggle('active')">
+        ☰
+    </button>
+
+    <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
      
      <!-- Hero Section -->
       <section id="home" class="hero">

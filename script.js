@@ -81,3 +81,23 @@ function typeEffect() {
 }
 
 typeEffect();
+
+// ===== SCROLL REVEAL ANIMATION =====
+
+const revealElements = document.querySelectorAll(
+    "section, .project-card, .skill-card, .about-box"
+);
+
+const revealOnScroll = () => {
+    revealElements.forEach((element) => {
+        const windowHeight = window.innerHeight;
+        const elementTop = element.getBoundingClientRect().top;
+
+        if (elementTop < windowHeight - 100) {
+            element.classList.add("show");
+        }
+    });
+};
+
+window.addEventListener("scroll", revealOnScroll);
+revealOnScroll();

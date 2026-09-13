@@ -1500,3 +1500,394 @@ section {
     background: rgba(255, 255, 255, 0.92);
     backdrop-filter: blur(10px);
 }
+
+/* =====================================================
+   🔥 FINAL DARK PREMIUM PORTFOLIO DESIGN
+   ===================================================== */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background:
+        radial-gradient(circle at 10% 20%, rgba(0, 180, 255, 0.18), transparent 28%),
+        radial-gradient(circle at 90% 30%, rgba(140, 0, 255, 0.18), transparent 30%),
+        radial-gradient(circle at 50% 90%, rgba(0, 80, 255, 0.12), transparent 35%),
+        linear-gradient(135deg, #020617, #07102b 50%, #050014);
+
+    color: #f8fafc;
+    overflow-x: hidden;
+}
+
+/* ===== NAVBAR ===== */
+
+.navbar {
+    background: rgba(2, 6, 23, 0.95);
+    border-bottom: 1px solid rgba(59, 130, 246, 0.35);
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.4);
+    position: relative;
+    z-index: 100;
+}
+
+.navbar h2 {
+    color: white;
+    text-shadow: 0 0 15px rgba(0, 180, 255, 0.5);
+}
+
+/* Hamburger */
+.menu-btn {
+    color: white !important;
+}
+
+/* ===== MOBILE MENU ===== */
+
+@media (max-width: 768px) {
+
+    .nav-links {
+        background: rgba(3, 7, 25, 0.98) !important;
+        border: 1px solid rgba(59, 130, 246, 0.35);
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+    }
+
+    .nav-links a {
+        color: white !important;
+    }
+
+    .nav-links a:hover {
+        color: #38bdf8 !important;
+    }
+}
+
+/* ===== ALL SECTIONS ===== */
+
+section {
+    background: transparent !important;
+    color: white;
+}
+
+/* ===== HERO ===== */
+
+.hero {
+    position: relative;
+    background:
+        radial-gradient(circle at 85% 35%, rgba(37, 99, 235, 0.22), transparent 25%),
+        radial-gradient(circle at 15% 80%, rgba(124, 58, 237, 0.18), transparent 25%);
+}
+
+.hero h1 {
+    color: white;
+    text-shadow: 0 0 25px rgba(59, 130, 246, 0.25);
+}
+
+.hero h2 {
+    color: white;
+}
+
+.hero p {
+    color: #cbd5e1;
+}
+
+/* Typing text */
+#typing {
+    color: #38bdf8 !important;
+    border-right-color: #a855f7 !important;
+}
+
+/* ===== HELLO BUTTON ===== */
+
+.hello-btn {
+    background: linear-gradient(90deg, #00bfff, #6366f1, #a855f7) !important;
+    box-shadow:
+        0 0 15px rgba(0, 191, 255, 0.45),
+        0 0 30px rgba(168, 85, 247, 0.25);
+
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.hello-btn:hover {
+    box-shadow:
+        0 0 20px rgba(0, 191, 255, 0.65),
+        0 0 40px rgba(168, 85, 247, 0.4);
+}
+
+/* ===== PROFILE IMAGE ===== */
+
+.hero-image img {
+    border: 3px solid transparent;
+
+    box-shadow:
+        0 0 0 3px rgba(59, 130, 246, 0.25),
+        0 0 25px rgba(0, 191, 255, 0.6),
+        0 0 50px rgba(168, 85, 247, 0.45);
+
+    transition: 0.4s ease;
+}
+
+.hero-image img:hover {
+    transform: scale(1.04);
+
+    box-shadow:
+        0 0 0 4px rgba(168, 85, 247, 0.4),
+        0 0 35px rgba(0, 191, 255, 0.8),
+        0 0 65px rgba(168, 85, 247, 0.6);
+}
+
+/* ===== HEADINGS ===== */
+
+section h2 {
+    color: white !important;
+    text-shadow: 0 0 20px rgba(59, 130, 246, 0.25);
+}
+
+/* ===== PROJECT SECTION ===== */
+
+#projects {
+    background: rgba(2, 6, 23, 0.35) !important;
+}
+
+/* Project Cards */
+
+.project-card {
+    background:
+        linear-gradient(
+            145deg,
+            rgba(15, 23, 42, 0.88),
+            rgba(7, 15, 40, 0.75)
+        ) !important;
+
+    border: 1px solid rgba(59, 130, 246, 0.45);
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 10px 35px rgba(0, 0, 0, 0.35),
+        inset 0 0 20px rgba(59, 130, 246, 0.03);
+
+    color: white;
+
+    backdrop-filter: blur(12px);
+
+    transition: 0.35s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+
+    border-color: #8b5cf6;
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.45),
+        0 0 25px rgba(59, 130, 246, 0.25),
+        0 0 35px rgba(168, 85, 247, 0.2);
+}
+
+.project-card h3 {
+    color: white !important;
+}
+
+.project-card p {
+    color: #cbd5e1 !important;
+}
+
+/* Project button */
+
+.project-btn {
+    background: linear-gradient(
+        90deg,
+        #00bfff,
+        #6366f1,
+        #a855f7
+    ) !important;
+
+    color: white !important;
+
+    box-shadow:
+        0 0 15px rgba(0, 191, 255, 0.35);
+}
+
+.project-btn:hover {
+    box-shadow:
+        0 0 25px rgba(168, 85, 247, 0.5);
+}
+
+/* ===== ABOUT ===== */
+
+#about {
+    background: transparent !important;
+}
+
+.about-container {
+    background:
+        linear-gradient(
+            145deg,
+            rgba(15, 23, 42, 0.85),
+            rgba(7, 15, 40, 0.75)
+        ) !important;
+
+    border: 1px solid rgba(59, 130, 246, 0.35);
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 10px 35px rgba(0, 0, 0, 0.35);
+
+    backdrop-filter: blur(12px);
+}
+
+.about-text h3 {
+    color: white !important;
+}
+
+.about-text p {
+    color: #cbd5e1 !important;
+}
+
+/* ===== SKILLS ===== */
+
+#skills {
+    background: transparent !important;
+}
+
+.skill-card {
+    background:
+        linear-gradient(
+            145deg,
+            rgba(15, 23, 42, 0.88),
+            rgba(7, 15, 40, 0.75)
+        ) !important;
+
+    border: 1px solid rgba(59, 130, 246, 0.4);
+
+    border-radius: 18px;
+
+    color: white;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.35);
+
+    backdrop-filter: blur(12px);
+}
+
+.skill-card:hover {
+    border-color: #a855f7;
+
+    box-shadow:
+        0 0 25px rgba(59, 130, 246, 0.25),
+        0 0 35px rgba(168, 85, 247, 0.2);
+}
+
+.skill-card h3 {
+    color: white !important;
+}
+
+.skill-card p {
+    color: #cbd5e1 !important;
+}
+
+/* ===== CONTACT ===== */
+
+#contact {
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(59, 130, 246, 0.12),
+            transparent 55%
+        ) !important;
+}
+
+#contact h2 {
+    color: white !important;
+}
+
+#contactForm {
+    background:
+        linear-gradient(
+            145deg,
+            rgba(15, 23, 42, 0.9),
+            rgba(7, 15, 40, 0.8)
+        ) !important;
+
+    border: 1px solid rgba(59, 130, 246, 0.4);
+
+    box-shadow:
+        0 10px 35px rgba(0, 0, 0, 0.4);
+
+    backdrop-filter: blur(12px);
+}
+
+#contactForm input,
+#contactForm textarea {
+    background: rgba(255, 255, 255, 0.06) !important;
+    color: white !important;
+
+    border: 1px solid rgba(255, 255, 255, 0.15) !important;
+}
+
+#contactForm input::placeholder,
+#contactForm textarea::placeholder {
+    color: #94a3b8;
+}
+
+#contactForm button {
+    background: linear-gradient(
+        90deg,
+        #00bfff,
+        #6366f1,
+        #a855f7
+    ) !important;
+
+    box-shadow:
+        0 0 20px rgba(59, 130, 246, 0.3);
+}
+
+/* ===== FOOTER ===== */
+
+footer {
+    background: #020617 !important;
+
+    border-top: 1px solid rgba(59, 130, 246, 0.3);
+
+    box-shadow:
+        0 -10px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* ===== MOBILE HERO ===== */
+
+@media (max-width: 768px) {
+
+    .hero {
+        padding: 70px 20px !important;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero h2 {
+        font-size: 24px;
+    }
+
+    .hero p {
+        color: #cbd5e1 !important;
+    }
+
+    .hero-image img {
+        width: 220px;
+        height: 220px;
+    }
+
+    .project-card,
+    .skill-card {
+        width: 90%;
+        max-width: 350px;
+    }
+
+    .about-container {
+        width: 100%;
+    }
+
+    #contactForm {
+        width: 90%;
+    }
+}

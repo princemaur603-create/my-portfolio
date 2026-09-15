@@ -47,29 +47,46 @@
 
      </section>
 
-      <!-- About-->
-       <section id="about">
-         <h2>About Me</h2>
+      <!-- About Section -->
+<section id="about" class="about-section reveal">
 
-         <div class="about">
-            <h3>Hi, I'm Prince👋</h3>
+    <h2>About Me</h2>
 
-         <p>
-            I am learning web development and building my skills in HTML,CSS and JavaScript.
-         </p>
+    <div class="about-container">
 
-         <p>
-             My goal is to become a professional web developer 
-             and create modern and beautiful websites.
-         </p>
+        <div class="about-text">
 
-         <a href="Prince_Maurya_Resume.pdf" download class="resume-btn">
-            Dowload Resume
-         </a>
+            <h3>Hi, I'm Prince 👋</h3>
 
-         </div>
+            <p>
+                I'm a passionate web development learner who enjoys
+                creating modern, responsive and user-friendly websites.
+            </p>
 
-       </section>
+            <p>
+                I am currently developing my skills in
+                <strong>HTML, CSS and JavaScript</strong> and building
+                real-world projects to improve my development skills.
+            </p>
+
+            <p>
+                My goal is to become a professional web developer and
+                create websites that are clean, fast, responsive and
+                enjoyable to use.
+            </p>
+
+            <div class="about-skills">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>Responsive Design</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
 
        <!-- Skills -->
       
@@ -274,7 +291,7 @@
         2D drafting and 3D modelling project created using AutoCAD.
     </p>
 
-    <a href="autocad.jpg" target="_blank" class="project-btn">
+    <a href="autocad.html" target="_blank" class="project-btn">
         View AutoCAD Project
     </a>
 
@@ -284,7 +301,44 @@
 
 </section>
 
-         <footer>
+     <!-- AI Assistant -->
+<div class="ai-assistant">
+    <button class="ai-button" onclick="toggleAssistant()">
+        🤖
+    </button>
+
+    <div class="ai-chat" id="aiChat">
+        <div class="ai-header">
+            <h3>Prince AI Assistant 🤖</h3>
+            <button onclick="toggleAssistant()">×</button>
+        </div>
+
+        <div class="ai-messages" id="aiMessages">
+            <div class="ai-message bot">
+                Hello! 👋 I'm Prince's AI Assistant.
+                How can I help you?
+            </div>
+        </div>
+
+        <div class="ai-input">
+    <button class="ai-mic" type="button" onclick="startVoiceInput()" title="Voice Input">
+        🎤
+    </button>
+
+    <input
+        type="text"
+        id="aiInput"
+        placeholder="Ask me something..."
+        onkeydown="if(event.key==='Enter') sendMessage()"
+    >
+
+    <button onclick="sendMessage()">➤</button>
+</div>
+
+    </div>
+</div>   
+
+<footer>
     <h3>Prince's Portfolio</h3>
 
     <p>© 2026 Prince. All Rights Reserved.</p>
@@ -302,6 +356,3 @@
          <script src="script.js"></script>
 
       </body>
-
-
-

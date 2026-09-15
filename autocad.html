@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoCAD Project</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #061a4f, #0b3d91);
+            color: white;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        .subtitle {
+            font-size: 18px;
+            margin-bottom: 35px;
+            color: #d8e8ff;
+        }
+
+        .project-box {
+            background: rgba(255, 255, 255, 0.10);
+            border: 1px solid rgba(100, 200, 255, 0.5);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 0 30px rgba(0, 180, 255, 0.25);
+        }
+
+        .project-image {
+            width: 100%;
+            max-width: 700px;
+            height: 400px;
+            object-fit: contain;
+            background: white;
+            border-radius: 15px;
+            padding: 10px;
+            margin-bottom: 25px;
+        }
+
+        h2 {
+            font-size: 30px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.7;
+            color: #e4efff;
+            margin-bottom: 25px;
+        }
+
+        .details {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin: 25px 0;
+        }
+
+        .detail {
+            background: rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            border-radius: 12px;
+        }
+
+        .detail h3 {
+            color: #6edcff;
+            margin-bottom: 8px;
+        }
+
+        .back-btn {
+            display: inline-block;
+            text-decoration: none;
+            background: linear-gradient(90deg, #48d7ff, #a56cff);
+            color: white;
+            font-weight: bold;
+            padding: 13px 30px;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+
+        .back-btn:hover {
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 700px) {
+            h1 {
+                font-size: 32px;
+            }
+
+            .project-image {
+                height: 250px;
+            }
+
+            .details {
+                grid-template-columns: 1fr;
+            }
+
+            .project-box {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>AutoCAD Project</h1>
+
+        <p class="subtitle">
+            2D Drafting & 3D Modelling Project
+        </p>
+
+        <div class="project-box">
+
+           <div class="gallery">
+
+    <img src="autocad.jpg" alt="AutoCAD Project 1">
+    <img src="autocad1.jpg" alt="AutoCAD Project 2">
+    <img src="autocad2.jpg" alt="AutoCAD Project 3">
+    <img src="autocad3.jpg" alt="AutoCAD Project 4">
+    <img src="autocad4.jpg" alt="AutoCAD Project 5">
+    <img src="autocad5.jpg" alt="AutoCAD Project 6">
+
+</div>
+            <h2>AutoCAD 2D & 3D</h2>
+
+            <p>
+                This project showcases my AutoCAD skills in
+                2D drafting and 3D modelling. The project was
+                created using AutoCAD with a focus on accurate
+                design, technical drawing and modelling.
+            </p>
+
+            <div class="details">
+
+                <div class="detail">
+                    <h3>Software</h3>
+                    <p>AutoCAD</p>
+                </div>
+
+                <div class="detail">
+                    <h3>Work</h3>
+                    <p>2D & 3D Design</p>
+                </div>
+
+                <div class="detail">
+                    <h3>Skills</h3>
+                    <p>Drafting & Modelling</p>
+                </div>
+
+            </div>
+
+            <a href="index.html#projects" class="back-btn">
+                ← Back to Projects
+            </a>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -230,8 +230,28 @@ function typeBotMessage(element, text) {
                     /To-Do List project page/gi,
                     '<a href="todo.html" target="_blank">To-Do List project page</a>'
                 );
+
+                speakBotMessage(text);
         }
     }
 
     type();
+}
+
+// ===== VOICE OUTPUT =====
+function speakBotMessage(text) {
+    if (!("speechSynthesis" in window)) {
+        return;
+    }
+
+    window.speechSynthesis.cancel();
+
+    const speech = new SpeechSynthesisUtterance(text);
+
+    speech.lang = "en-IN";
+    speech.rate = 1;
+    speech.pitch = 1;
+    speech.volume = 1;
+
+    window.speechSynthesis.speak(speech);
 }
